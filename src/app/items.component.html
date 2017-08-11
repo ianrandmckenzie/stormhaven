@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row items">
+    <h2>My Items</h2>
+    <div class="col-xs-4 col-md-2" *ngFor="let item of items"
+      [class.selected]="item === selectedItem"
+      (click)="gotoDetail(item)">
+      <span class="badge">{{item.id}}</span> {{item.name}}
+    </div>
+  </div>
+  </div>
